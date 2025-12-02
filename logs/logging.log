@@ -162,3 +162,151 @@ x==========x]
 [2025-11-27 14:57:03,523- INFO- main - >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+[2025-12-02 17:21:33,199- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:21:33,204- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:21:33,210- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:21:33,213- INFO- common - created directory at:artifacts]
+[2025-12-02 17:21:33,215- INFO- common - created directory at:artifacts/model_trainer]
+[2025-12-02 17:22:36,690- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:22:36,695- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:22:36,702- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:22:36,705- INFO- common - created directory at:artifacts]
+[2025-12-02 17:22:36,707- INFO- common - created directory at:artifacts/model_trainer]
+[2025-12-02 17:23:34,409- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:23:34,415- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:23:34,420- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:23:34,424- INFO- common - created directory at:artifacts]
+[2025-12-02 17:23:34,426- INFO- common - created directory at:artifacts/model_trainer]
+[2025-12-02 17:23:52,494- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:23:52,499- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:23:52,504- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:23:52,507- INFO- common - created directory at:artifacts]
+[2025-12-02 17:23:52,510- INFO- common - created directory at:artifacts/model_trainer]
+[2025-12-02 17:26:33,994- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:26:33,998- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:26:34,003- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:26:34,007- INFO- common - created directory at:artifacts]
+[2025-12-02 17:26:34,009- INFO- common - created directory at:artifacts/model_trainer]
+[2025-12-02 17:39:56,653- INFO- main - >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-12-02 17:39:56,675- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:39:56,697- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:39:56,721- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:39:56,723- INFO- common - created directory at:artifacts]
+[2025-12-02 17:39:56,723- INFO- common - created directory at:artifacts/data_ingestion]
+[2025-12-02 17:39:56,723- INFO- data_ingestion - File already exists]
+[2025-12-02 17:39:56,746- INFO- main - >>>>>> stage Data Ingestion Stage completed <<<<]
+[2025-12-02 17:39:56,746- INFO- main - >>stage Data Validation stage started]
+[2025-12-02 17:39:56,746- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:39:56,751- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:39:56,752- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:39:56,753- INFO- common - created directory at:artifacts]
+[2025-12-02 17:39:56,754- INFO- common - created directory at:artifacts/data_validation]
+[2025-12-02 17:39:56,782- INFO- main - >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 17:39:56,785- INFO- main - >>stage Data Transformation stage started]
+[2025-12-02 17:39:56,807- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:39:56,810- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:39:56,813- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:39:56,813- INFO- common - created directory at:artifacts]
+[2025-12-02 17:39:56,813- INFO- common - created directory at:artifacts/data_transformation]
+[2025-12-02 17:39:56,833- INFO- data_transformation - data transformation is done]
+[2025-12-02 17:39:56,835- INFO- data_transformation - (1199, 12)]
+[2025-12-02 17:39:56,835- INFO- data_transformation - (400, 12)]
+[2025-12-02 17:39:56,836- INFO- main - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 17:39:56,836- INFO- main - >>stage Model Training stage started]
+[2025-12-02 17:39:56,843- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:39:56,847- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:39:56,850- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:39:56,852- INFO- common - created directory at:artifacts]
+[2025-12-02 17:39:56,854- ERROR- main - 'ConfigurationManager' object has no attribute 'param']
+Traceback (most recent call last):
+  File "C:\Users\karakkir\OneDrive - Tietoevry\Predicting-Wine-Quality-Using-ML\main.py", line 52, in <module>
+    obj.initiate_model_training()
+  File "C:\Users\karakkir\OneDrive - Tietoevry\Predicting-Wine-Quality-Using-ML\src\datascience\pipeline\model_train_pipeline.py", line 13, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\karakkir\OneDrive - Tietoevry\Predicting-Wine-Quality-Using-ML\src\datascience\config\configuration.py", line 61, in get_model_trainer_config
+    param=self.param.ElasticNet # type: ignore
+AttributeError: 'ConfigurationManager' object has no attribute 'param'
+[2025-12-02 17:41:13,773- INFO- main - >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-12-02 17:41:13,773- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:41:13,773- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:41:13,781- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:41:13,782- INFO- common - created directory at:artifacts]
+[2025-12-02 17:41:13,782- INFO- common - created directory at:artifacts/data_ingestion]
+[2025-12-02 17:41:13,783- INFO- data_ingestion - File already exists]
+[2025-12-02 17:41:13,787- INFO- main - >>>>>> stage Data Ingestion Stage completed <<<<]
+[2025-12-02 17:41:13,790- INFO- main - >>stage Data Validation stage started]
+[2025-12-02 17:41:13,792- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:41:13,793- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:41:13,796- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:41:13,797- INFO- common - created directory at:artifacts]
+[2025-12-02 17:41:13,797- INFO- common - created directory at:artifacts/data_validation]
+[2025-12-02 17:41:13,828- INFO- main - >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 17:41:13,828- INFO- main - >>stage Data Transformation stage started]
+[2025-12-02 17:41:13,828- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:41:13,828- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:41:13,834- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:41:13,836- INFO- common - created directory at:artifacts]
+[2025-12-02 17:41:13,836- INFO- common - created directory at:artifacts/data_transformation]
+[2025-12-02 17:41:13,858- INFO- data_transformation - data transformation is done]
+[2025-12-02 17:41:13,859- INFO- data_transformation - (1199, 12)]
+[2025-12-02 17:41:13,859- INFO- data_transformation - (400, 12)]
+[2025-12-02 17:41:13,859- INFO- main - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 17:41:13,859- INFO- main - >>stage Model Training stage started]
+[2025-12-02 17:41:13,861- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:41:13,863- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:41:13,866- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:41:13,866- INFO- common - created directory at:artifacts]
+[2025-12-02 17:41:13,866- INFO- common - created directory at:artifacts/model_trainer]
+[2025-12-02 17:41:13,868- ERROR- main - local variable 'model_train' referenced before assignment]
+Traceback (most recent call last):
+  File "C:\Users\karakkir\OneDrive - Tietoevry\Predicting-Wine-Quality-Using-ML\main.py", line 52, in <module>
+    obj.initiate_model_training()
+  File "C:\Users\karakkir\OneDrive - Tietoevry\Predicting-Wine-Quality-Using-ML\src\datascience\pipeline\model_train_pipeline.py", line 14, in initiate_model_training
+    model_train=model_train(model_trainer_config) # type: ignore
+UnboundLocalError: local variable 'model_train' referenced before assignment
+[2025-12-02 17:43:19,327- INFO- main - >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-12-02 17:43:19,331- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:43:19,333- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:43:19,337- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:43:19,339- INFO- common - created directory at:artifacts]
+[2025-12-02 17:43:19,340- INFO- common - created directory at:artifacts/data_ingestion]
+[2025-12-02 17:43:19,340- INFO- data_ingestion - File already exists]
+[2025-12-02 17:43:19,343- INFO- main - >>>>>> stage Data Ingestion Stage completed <<<<]
+[2025-12-02 17:43:19,343- INFO- main - >>stage Data Validation stage started]
+[2025-12-02 17:43:19,349- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:43:19,350- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:43:19,353- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:43:19,354- INFO- common - created directory at:artifacts]
+[2025-12-02 17:43:19,354- INFO- common - created directory at:artifacts/data_validation]
+[2025-12-02 17:43:19,388- INFO- main - >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 17:43:19,389- INFO- main - >>stage Data Transformation stage started]
+[2025-12-02 17:43:19,393- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:43:19,395- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:43:19,439- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:43:19,440- INFO- common - created directory at:artifacts]
+[2025-12-02 17:43:19,441- INFO- common - created directory at:artifacts/data_transformation]
+[2025-12-02 17:43:19,468- INFO- data_transformation - data transformation is done]
+[2025-12-02 17:43:19,468- INFO- data_transformation - (1199, 12)]
+[2025-12-02 17:43:19,469- INFO- data_transformation - (400, 12)]
+[2025-12-02 17:43:19,469- INFO- main - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-12-02 17:43:19,470- INFO- main - >>stage Model Training stage started]
+[2025-12-02 17:43:19,473- INFO- common - yaml file :config\config.yaml loaded successfully]
+[2025-12-02 17:43:19,473- INFO- common - yaml file :params.yaml loaded successfully]
+[2025-12-02 17:43:19,476- INFO- common - yaml file :schema.yaml loaded successfully]
+[2025-12-02 17:43:19,476- INFO- common - created directory at:artifacts]
+[2025-12-02 17:43:19,477- INFO- common - created directory at:artifacts/model_trainer]
+[2025-12-02 17:43:19,527- INFO- main - >>>>>> stage Model Training stage completed <<<<<<
+
+x==========x]
