@@ -1,3 +1,4 @@
+from src.datascience.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience import logger
 from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTrainingPipeline
@@ -54,3 +55,16 @@ if __name__=='__main__':
     except Exception as e:
         logger.exception(e)
         raise e
+
+STAGE_NAME = "MODEL_EVAL_STAGE"
+
+if __name__=='__main__':
+    try:
+        logger.info(f">>stage {STAGE_NAME} started")
+        obj = ModelEvaluationPipeline()
+        obj.initiate_model_eval()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+    except Exception as e:
+        logger.exception(e)
+        raise e
+
