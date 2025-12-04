@@ -14,6 +14,7 @@ class model_train:
     def train_model(self):
         train=pd.read_csv(self.config.train_data_path)
         test=pd.read_csv(self.config.test_data_path)
+      
 
         train_x=train.drop([self.config.target_column],axis=1)
         test_x=test.drop([self.config.target_column],axis=1)
